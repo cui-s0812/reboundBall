@@ -8,7 +8,7 @@
 
 @property (nonatomic) int length;
 @property (nonatomic) int width;
-@property (nonatomic) ball* bao;
+@property (nonatomic) ball* ball;
 
 -(void)okonau:(int)x:(int)y:(int)w;
 

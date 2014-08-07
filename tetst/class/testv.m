@@ -9,7 +9,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        self.bao = [[ball alloc]init];
+        self.ball = [[ball alloc]init];
     }
     return self;
 }
@@ -46,10 +46,10 @@
         CGContextAddLineToPoint(context,20, self.length);
         CGContextAddLineToPoint(context,0, self.length);
     
-        CGContextMoveToPoint(context,self.bao.x,self.bao.y);
-        CGContextAddLineToPoint(context,self.bao.x+5, self.bao.y);
-        CGContextAddLineToPoint(context,self.bao.x+5, self.bao.y+5);
-        CGContextAddLineToPoint(context,self.bao.x, self.bao.y+5);
+        CGContextMoveToPoint(context,self.ball.x,self.ball.y);
+        CGContextAddLineToPoint(context,self.ball.x+5, self.ball.y);
+        CGContextAddLineToPoint(context,self.ball.x+5, self.ball.y+5);
+        CGContextAddLineToPoint(context,self.ball.x, self.ball.y+5);
     CGContextClosePath(context);
 
     
@@ -59,7 +59,7 @@
 }
 
 -(void)okonau:(int)x:(int)y:(int)w{
-    [self.bao move:x:y:w];
+    [self.ball move:x:y:w];
     
     CGRect refreshRect;
     refreshRect.origin.x = 20;
