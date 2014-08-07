@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D2B53560-58EA-478C-A587-3FC8CB35150A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>tetst</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F9B99541-0629-4981-8909-7648261EB13E</key>
+		<string>ssh://github.com/cui-s/Our-FirstBlood.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>tetst.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F9B99541-0629-4981-8909-7648261EB13E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/cui-s/Our-FirstBlood.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F9B99541-0629-4981-8909-7648261EB13E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F9B99541-0629-4981-8909-7648261EB13E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Our-FirstBlood</string>
+		</dict>
+	</array>
+</dict>
+</plist>

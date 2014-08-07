@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FNr-MW-GSS"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZR1-bs-Q57"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZVD-5v-2v5">
+                                <rect key="frame" x="0.0" y="-5" width="320" height="548"/>
+                                <subviews>
+                                    <imageView contentMode="scaleToFill" image="3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="JLP-RN-VBN">
+                                        <rect key="frame" x="120" y="397" width="80" height="24"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="a3h-vG-1TE"/>
+                                            <constraint firstAttribute="width" constant="80" id="sYA-m4-y3R"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="2oR-AC-jU8" appends="YES" id="7Mx-q8-uGX"/>
+                                            <outletCollection property="gestureRecognizers" destination="EoA-UO-iEj" appends="YES" id="qau-fL-a12"/>
+                                            <outletCollection property="gestureRecognizers" destination="Cco-wz-lYs" appends="YES" id="3Ig-hq-M9k"/>
+                                        </connections>
+                                    </imageView>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.5" maxValue="3.5" translatesAutoresizingMaskIntoConstraints="NO" id="8Oi-fg-Up6">
+                                        <rect key="frame" x="64" y="429" width="52" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="48" id="dEW-O6-ZlQ"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="changeSize:" destination="2" eventType="valueChanged" id="xhJ-5A-p0V"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bar" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xMz-hw-GRK">
+                                        <rect key="frame" x="38" y="436" width="27" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Ball" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y0x-Qh-HN1">
+                                        <rect key="frame" x="203" y="429" width="29" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="f6d-cy-Iqj">
+                                        <rect key="frame" x="232" y="429" width="52" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="48" id="J9r-Cz-BFT"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="changeBallSpeed:" destination="2" eventType="valueChanged" id="ZdF-mh-8eJ"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="xMz-hw-GRK" secondAttribute="bottom" constant="91" id="AlJ-NE-kFn"/>
+                                    <constraint firstAttribute="trailing" secondItem="y0x-Qh-HN1" secondAttribute="trailing" constant="88" id="DAD-6W-Phm"/>
+                                    <constraint firstItem="JLP-RN-VBN" firstAttribute="centerX" secondItem="ZVD-5v-2v5" secondAttribute="centerX" id="EwH-LU-KvF"/>
+                                    <constraint firstItem="8Oi-fg-Up6" firstAttribute="leading" secondItem="ZVD-5v-2v5" secondAttribute="leading" constant="66" id="Jzp-PP-TID"/>
+                                    <constraint firstItem="y0x-Qh-HN1" firstAttribute="top" secondItem="JLP-RN-VBN" secondAttribute="bottom" constant="8" symbolic="YES" id="P4d-6F-THU"/>
+                                    <constraint firstItem="8Oi-fg-Up6" firstAttribute="top" secondItem="JLP-RN-VBN" secondAttribute="bottom" constant="8" symbolic="YES" id="Tnt-Xo-UmF"/>
+                                    <constraint firstItem="y0x-Qh-HN1" firstAttribute="top" secondItem="f6d-cy-Iqj" secondAttribute="top" id="W1S-KE-sxi"/>
+                                    <constraint firstAttribute="bottom" secondItem="f6d-cy-Iqj" secondAttribute="bottom" constant="89" id="WHM-GW-29b"/>
+                                    <constraint firstItem="xMz-hw-GRK" firstAttribute="top" secondItem="ZVD-5v-2v5" secondAttribute="top" constant="436" id="cQN-VN-ycc"/>
+                                    <constraint firstAttribute="trailing" secondItem="f6d-cy-Iqj" secondAttribute="trailing" constant="38" id="cjD-kU-vNO"/>
+                                    <constraint firstItem="xMz-hw-GRK" firstAttribute="leading" secondItem="ZVD-5v-2v5" secondAttribute="leading" constant="38" id="hTT-Q0-zq8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZVD-5v-2v5" firstAttribute="top" secondItem="3" secondAttribute="top" constant="-5" id="0Zu-FD-fn9"/>
+                            <constraint firstItem="ZVD-5v-2v5" firstAttribute="leading" secondItem="3" secondAttribute="leading" id="CBI-AR-htZ"/>
+                            <constraint firstItem="ZVD-5v-2v5" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" id="jld-wS-NsR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageStick" destination="JLP-RN-VBN" id="rPF-Il-GHa"/>
+                        <outlet property="reg_z" destination="2oR-AC-jU8" id="Eug-31-fYJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="2oR-AC-jU8">
+                    <connections>
+                        <action selector="handlePan:" destination="2" id="5d7-dx-qWs"/>
+                    </connections>
+                </panGestureRecognizer>
+                <tapGestureRecognizer id="EoA-UO-iEj"/>
+                <rotationGestureRecognizer id="Cco-wz-lYs">
+                    <connections>
+                        <action selector="handleRotate:" destination="2" id="Xnh-56-7JX"/>
+                    </connections>
+                </rotationGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-95" y="40"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="3.jpg" width="321" height="346"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
